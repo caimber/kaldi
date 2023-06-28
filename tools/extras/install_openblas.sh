@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-OPENBLAS_VERSION=0.3.13
+# 20230612 :: Adjustments to open blas version and mac dev target from https://github.com/xianyi/OpenBLAS/issues/3222
+OPENBLAS_VERSION=0.3.20
 
 WGET=${WGET:-wget}
 
@@ -32,7 +33,7 @@ fi
 tar xzf $tarball
 mv xianyi-OpenBLAS-* OpenBLAS
 
-make PREFIX=$(pwd)/OpenBLAS/install USE_LOCKING=1 USE_THREAD=0 -C OpenBLAS all install
+MACOSX_DEPLOYMENT_TARGET=13.4 make PREFIX=$(pwd)/OpenBLAS/install USE_LOCKING=1 USE_THREAD=0 -C OpenBLAS all install
 if [ $? -eq 0 ]; then
    echo "OpenBLAS is installed successfully."
    rm $tarball
