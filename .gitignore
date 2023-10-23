@@ -91,3 +91,4 @@ venv/
 /src/**/CMakeLists.txt
 /build*
 egs/librispeech/s5/tools
+cmake-build-debug
