@@ -76,6 +76,9 @@ bool SingleUtteranceNnet2Decoder::EndpointDetected(
                                  decoder_);  
 }
 
+nnet2::DecodableNnet2Online &SingleUtteranceNnet2Decoder::Decodable() {
+  return decodable_;
+}
 
 }  // namespace kaldi
 

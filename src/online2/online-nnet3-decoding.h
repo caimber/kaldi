@@ -98,6 +98,8 @@ class SingleUtteranceNnet3DecoderTpl {
 
   const LatticeFasterOnlineDecoderTpl<FST> &Decoder() const { return decoder_; }
 
+  nnet3::DecodableAmNnetLoopedOnline &Decodable();
+
   ~SingleUtteranceNnet3DecoderTpl() { }
  private:
 

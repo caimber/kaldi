@@ -94,6 +94,10 @@ bool SingleUtteranceNnet3DecoderTpl<FST>::EndpointDetected(
                                  output_frame_shift, decoder_);
 }
 
+template <typename FST>
+nnet3::DecodableAmNnetLoopedOnline &SingleUtteranceNnet3DecoderTpl<FST>::Decodable() {
+  return decodable_;
+}
 
 // Instantiate the template for the types needed.
 template class SingleUtteranceNnet3DecoderTpl<fst::Fst<fst::StdArc> >;
