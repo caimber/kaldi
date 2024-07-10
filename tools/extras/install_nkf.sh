@@ -8,10 +8,6 @@
 # code to designated kanji code such as ISO-2022-JP, UTF-8, and so on.
 # In kaldi, it will be used in egs/csj. (Corpus of Spontaneous Japanese data)
 
-VERSION=2.1.4
-
-WGET=${WGET:-wget}
-
 set -u
 set -e
 
@@ -25,24 +21,20 @@ fi
 
 echo Downloading and installing the nkf tools
 #Download
-if [ ! -f nkf-$VERSION.tar.gz ]; then
-  if [ -d "${DOWNLOAD_DIR:-}" ]; then
-    cp -p "$DOWNLOAD_DIR/nkf-$VERSION.tar.gz" .
-  else
-    $WGET https://osdn.net/dl/nkf/nkf-$VERSION.tar.gz
-  fi
-  tar -vxzf nkf-$VERSION.tar.gz
+if [ ! -f nkf-2.1.4.tar.gz ]; then
+  wget https://osdn.net/dl/nkf/nkf-2.1.4.tar.gz
+  tar -vxzf nkf-2.1.4.tar.gz
 fi
 
 #install
-cd nkf-$VERSION
+cd nkf-2.1.4
 make
 cd ..
 
 #add to env.sh
 if [ -f env.sh ]; then
   wd=`pwd`
-  echo "export NKF=$wd/nkf-$VERSION" >> env.sh
+  echo "export NKF=$wd/nkf-2.1.4" >> env.sh
   echo "export PATH=\${PATH}:\${NKF}" >> env.sh
 fi
 echo Done making the nkf tools

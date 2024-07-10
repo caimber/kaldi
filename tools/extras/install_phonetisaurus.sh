@@ -1,7 +1,4 @@
 #!/bin/bash
-
-GIT=${GIT:-git}
-
 set -u
 set -e
 
@@ -43,12 +40,12 @@ fi
 
 
 if [ ! -d ./phonetisaurus-g2p ] ; then
-  $GIT clone https://github.com/AdolfVonKleist/Phonetisaurus.git phonetisaurus-g2p ||
+  git clone https://github.com/AdolfVonKleist/Phonetisaurus.git phonetisaurus-g2p ||
   {
     echo  >&2 "$0: Warning: git clone operation ended unsuccessfully"
     echo  >&2 "  I will assume this is because you don't have https support"
     echo  >&2 "  compiled into your git "
-    $GIT clone https://github.com/AdolfVonKleist/Phonetisaurus.git phonetisaurus-g2p
+    git clone http://github.com/AdolfVonKleist/Phonetisaurus.git phonetisaurus-g2p
 
     if [ $? -ne 0 ]; then
       echo  >&2 "$0: Error git clone operation ended unsuccessfully"
@@ -62,7 +59,7 @@ fi
     export TOOLS=${PWD}
     cd phonetisaurus-g2p
     #checkout the current kaldi tag
-    $GIT checkout -b kaldi kaldi
+    git checkout -b kaldi kaldi
     ./configure --with-openfst-includes=${TOOLS}/openfst/include --with-openfst-libs=${TOOLS}/openfst/lib
     make
 )

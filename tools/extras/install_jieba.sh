@@ -2,8 +2,6 @@
 
 # The script downloads and installs jieba
 
-GIT=${GIT:-git}
-
 set -e
 
 # Make sure we are in the tools/ directory.
@@ -24,7 +22,7 @@ if [ -d ./jieba ] ; then
 fi
 
 if [ ! -d ./jieba ]; then
-  $GIT clone https://github.com/fxsjy/jieba.git || exit 1;
+  git clone https://github.com/fxsjy/jieba.git || exit 1;
 fi
 
 (
