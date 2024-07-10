@@ -223,6 +223,13 @@ void DecodableNnetLoopedOnlineBase::AdvanceChunk() {
     output.Scale(info_.opts.acoustic_scale);
     current_log_post_.Resize(0, 0);
     current_log_post_.Swap(&output);
+    int onr = cached_log_post_.NumRows();
+    int nr = current_log_post_.NumRows();
+    int nc = current_log_post_.NumCols();
+    // Added by Jian Cheng, 8/18/2020 to keep a cache version of all log-likelihood
+    cached_log_post_.Resize(onr + nr, nc, kCopyData);
+    cached_log_post_.RowRange(onr, nr).CopyFromMat(
+      current_log_post_.RowRange(0, nr));
   }
   KALDI_ASSERT(current_log_post_.NumRows() == info_.frames_per_chunk /
                info_.opts.frame_subsampling_factor &&
@@ -248,6 +255,12 @@ BaseFloat DecodableNnetLoopedOnline::LogLikelihood(int32 subsampled_frame,
 
 BaseFloat DecodableAmNnetLoopedOnline::LogLikelihood(int32 subsampled_frame,
                                                     int32 index) {
+  // added by Jian Cheng, 8/18/2020 to fix chunk/short current_log_post_ issue
+  // You need to set: decodable.use_cached_log_post = true;
+  if (use_cached_log_post) { 
+    // if (trans_model_.TransitionIdToPdfFast(index) >= trans_model_.NumPdfs()) return 0;
+    return cached_log_post_(subsampled_frame, trans_model_.TransitionIdToPdfFast(index));
+  }
   subsampled_frame += frame_offset_;
   EnsureFrameIsComputed(subsampled_frame);
   return current_log_post_(

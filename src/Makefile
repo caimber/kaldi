@@ -31,8 +31,12 @@ include kaldi.mk
 
 # Reset the default goal, so that the all target will become default
 .DEFAULT_GOAL :=
-all: $(SUBDIRS) matrix/test
+all: $(SUBDIRS) kaldilib
 	-echo Done
+
+kaldilib:
+	-gcc -shared -o libkaldi.so -Wl,--whole-archive ./online2/kaldi-online2.a ./ivector/kaldi-ivector.a ./nnet3/kaldi-nnet3.a ./chain/kaldi-chain.a ./nnet2/kaldi-nnet2.a ./lat/kaldi-lat.a ./decoder/kaldi-decoder.a ./cudamatrix/kaldi-cudamatrix.a ./feat/kaldi-feat.a ./transform/kaldi-transform.a ./gmm/kaldi-gmm.a ./hmm/kaldi-hmm.a ./tree/kaldi-tree.a ./matrix/kaldi-matrix.a ./fstext/kaldi-fstext.a ./util/kaldi-util.a ./base/kaldi-base.a -Wl,--no-whole-archive
+
 
 mklibdir:
 	test -d $(KALDILIBDIR) || mkdir $(KALDILIBDIR)
@@ -61,11 +65,11 @@ endif
 biglib: $(SUBDIRS_LIB)
 ifeq ($(KALDI_FLAVOR), dynamic)
 ifeq ($(shell uname), Darwin)
-	$(CXX) -dynamiclib -o $(KALDILIBDIR)/libkaldi.dylib -install_name @rpath/libkaldi.dylib -framework Accelerate $(LDFLAGS) $(SUBDIRS_LIB:=/*.dylib)
+	$(CXX) -dynamiclib -o $(KALDILIBDIR)/libkaldi.dylib -install_name @rpath/libkaldi.dylib -framework Accelerate $(LDFLAGS) $(wildcard $(SUBDIRS_LIB:=/*.dylib))
 else
 ifeq ($(shell uname), Linux)
 	#$(warning the following command will probably fail, in that case add -fPIC to your CXXFLAGS and remake all)
-	$(CXX) -shared -o $(KALDILIBDIR)/$(KALDI_SONAME) -Wl,-soname=$(KALDI_SONAME),--whole-archive  $(SUBDIRS_LIB:=/kaldi-*.a) $(LDLIBS) -Wl,--no-whole-archive
+	$(CXX) -shared -o $(KALDILIBDIR)/$(KALDI_SONAME) -Wl,-soname=$(KALDI_SONAME),--whole-archive  $(wildcard $(SUBDIRS_LIB:=/kaldi-*.a)) -Wl,--no-whole-archive  $(LDLIBS)
 else
 	$(error Dynamic libraries not supported on this platform. Run configure with --static flag. )
 endif

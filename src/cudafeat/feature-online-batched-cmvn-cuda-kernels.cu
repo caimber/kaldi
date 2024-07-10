@@ -18,13 +18,13 @@
 #include <cub/cub.cuh>
 #include "cudafeat/feature-online-batched-cmvn-cuda-kernels.h"
 
-__device__ inline float2 operator-(const float2 &a, const float2 &b) {
+__host__ __device__ inline float2 operator-(const float2 &a, const float2 &b) {
   float2 retval;
   retval.x = a.x - b.x;
   retval.y = a.y - b.y;
   return retval;
 }
-__device__ inline float2 operator+(const float2 &a, const float2 &b) {
+__host__ __device__ inline float2 operator+(const float2 &a, const float2 &b) {
   float2 retval;
   retval.x = a.x + b.x;
   retval.y = a.y + b.y;
@@ -46,6 +46,7 @@ namespace kaldi {
 // threadIdx.x = frame  (up to 1024?)
 // blockIdx.x = feature
 // blockIdx.y = batch id
+__launch_bounds__ (1024, 1)
 __global__ void compute_cmvn_stats_kernel(
     int32_t feat_dim, int32_t chunk_size, int32_t stats_coarsening_factor,
     int32_t cmn_window, const float *in_data, int32_t ldi, int32_t stridei,
