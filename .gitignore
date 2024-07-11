@@ -77,8 +77,6 @@ GSYMS
 /egs/*/*/plp
 /egs/*/*/exp
 /egs/*/*/data
-/egs/*/*/wav
-/egs/*/*/enhan
 
 # /tools/
 /tools/pocolm/
@@ -151,8 +149,3 @@ GSYMS
 /tools/cub-1.8.0/
 /tools/cub
 /tools/python/
-
-# These CMakeLists.txt files are all genareted on the fly at the moment.
-# They are added here to avoid accidently checkin.
-/src/**/CMakeLists.txt
-/build*
