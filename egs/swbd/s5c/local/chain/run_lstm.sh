@@ -1,1 +1,1 @@
-swbd/s5c/local/chain/tuning/run_lstm_6j.sh
+tuning/run_lstm_6j.sh

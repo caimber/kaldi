@@ -1,1 +1,1 @@
-wsj/s5/steps/nnet/decode.sh
+nnet/decode.sh

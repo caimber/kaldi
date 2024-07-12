@@ -1,1 +1,1 @@
-swbd/s5c/local/chain/tuning/run_tdnn_blstm_1d.sh
+tuning/run_tdnn_blstm_1d.sh

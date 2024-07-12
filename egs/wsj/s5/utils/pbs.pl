@@ -1,1 +1,1 @@
-wsj/s5/utils/parallel/pbs.pl
+parallel/pbs.pl

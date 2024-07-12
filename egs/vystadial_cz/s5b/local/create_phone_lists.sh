@@ -1,1 +1,1 @@
-vystadial_cz/s5/local/create_phone_lists.sh
+../../s5/local/create_phone_lists.sh

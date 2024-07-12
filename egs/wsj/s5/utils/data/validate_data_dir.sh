@@ -1,1 +1,1 @@
-wsj/s5/utils/validate_data_dir.sh
+../validate_data_dir.sh

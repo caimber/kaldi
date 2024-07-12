@@ -1,1 +1,1 @@
-wsj/s5/local/chain/e2e/tuning/run_tdnnf_flatstart_char1b.sh
+tuning/run_tdnnf_flatstart_char1b.sh

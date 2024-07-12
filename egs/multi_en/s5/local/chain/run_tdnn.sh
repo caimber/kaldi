@@ -1,1 +1,1 @@
-multi_en/s5/local/chain/tuning/run_tdnn_5b.sh
+tuning/run_tdnn_5b.sh

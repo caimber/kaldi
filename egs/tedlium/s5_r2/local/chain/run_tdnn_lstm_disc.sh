@@ -1,1 +1,1 @@
-tedlium/s5_r2/local/chain/tuning/run_tdnn_lstm_1e_disc.sh
+tuning/run_tdnn_lstm_1e_disc.sh

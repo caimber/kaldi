@@ -1,1 +1,1 @@
-babel/s5b/local/kws_score_f4de.sh
+kws_score_f4de.sh

@@ -1,1 +1,1 @@
-wsj/s5/utils/parallel/run.pl
+parallel/run.pl

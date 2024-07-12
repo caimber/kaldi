@@ -1,1 +1,1 @@
-aishell2/s5/local/nnet3/tuning/finetune_tdnn_1a.sh
+tuning/finetune_tdnn_1a.sh

@@ -1,1 +1,1 @@
-vystadial_cz/s5/local/download_cs_data.sh
+../../s5/local/download_cs_data.sh

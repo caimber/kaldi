@@ -1,1 +1,1 @@
-gale_arabic/s5b/local/chain/tuning/run_tdnn_lstm_1a.sh
+tuning/run_tdnn_lstm_1a.sh

@@ -1,1 +1,1 @@
-wsj/s5/utils/subset_data_dir.sh
+../subset_data_dir.sh

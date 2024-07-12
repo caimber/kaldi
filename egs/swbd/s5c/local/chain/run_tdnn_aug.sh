@@ -1,1 +1,1 @@
-swbd/s5c/local/chain/multi_condition/run_tdnn_aug_1a.sh
+multi_condition/run_tdnn_aug_1a.sh

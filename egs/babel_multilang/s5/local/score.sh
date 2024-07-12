@@ -1,1 +1,1 @@
-babel/s5d/local/run_kws_stt_task.sh
+../../../babel/s5d/local/score.sh

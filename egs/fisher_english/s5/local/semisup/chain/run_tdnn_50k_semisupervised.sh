@@ -1,1 +1,1 @@
-fisher_english/s5/local/semisup/chain/tuning/run_tdnn_50k_semisupervised_1a.sh
+tuning/run_tdnn_50k_semisupervised_1a.sh

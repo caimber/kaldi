@@ -1,1 +1,1 @@
-gale_arabic/s5c/local/nnet3/tuning/run_lstm_1a.sh
+tuning/run_lstm_1a.sh

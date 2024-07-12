@@ -1,1 +1,1 @@
-tedlium/s5_r2/local/join_suffix.py
+../../s5_r2/local/join_suffix.py

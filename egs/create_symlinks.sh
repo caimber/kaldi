@@ -21,12 +21,6 @@ while IFS= read -r line; do
     target=$(echo "$line" | awk '{print $1}')
     symlink_path=$(echo "$line" | awk '{print $2}')
 
-    # Check if target exists
-    if [ ! -e "$target" ]; then
-        echo "Warning: Target $target does not exist. Skipping."
-        continue
-    fi
-
     # Check if symlink path already exists as a directory or file
     if [ -e "$symlink_path" ]; then
         echo "Symlink path $symlink_path already exists."
@@ -40,6 +34,8 @@ while IFS= read -r line; do
             echo "Deleting file $symlink_path"
             rm "$symlink_path"
         fi
+    else
+        continue
     fi
 
     # Create symlink

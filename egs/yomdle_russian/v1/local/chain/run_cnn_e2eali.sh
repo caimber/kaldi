@@ -1,1 +1,1 @@
-yomdle_russian/v1/local/chain/tuning/run_cnn_e2eali_1a.sh
+tuning/run_cnn_e2eali_1a.sh

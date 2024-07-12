@@ -1,1 +1,1 @@
-babel/s5/local/score_sctk.sh
+score_sctk.sh

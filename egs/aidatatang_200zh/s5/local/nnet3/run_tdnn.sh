@@ -1,1 +1,1 @@
-aidatatang_200zh/s5/local/nnet3/tuning/run_tdnn.sh
+tuning/run_tdnn.sh

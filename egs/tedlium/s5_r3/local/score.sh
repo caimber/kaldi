@@ -1,1 +1,1 @@
-tedlium/s5_r3/local/score_basic.sh
+score_basic.sh

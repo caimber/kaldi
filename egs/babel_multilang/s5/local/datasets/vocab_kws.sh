@@ -1,1 +1,1 @@
-babel/s5d/local/datasets/vocab_kws.sh
+../../../../babel/s5d/local/datasets/vocab_kws.sh

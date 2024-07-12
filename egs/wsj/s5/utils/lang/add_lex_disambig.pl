@@ -1,1 +1,1 @@
-wsj/s5/utils/add_lex_disambig.pl
+../add_lex_disambig.pl

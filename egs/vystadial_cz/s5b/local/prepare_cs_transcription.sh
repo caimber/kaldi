@@ -1,1 +1,1 @@
-vystadial_cz/s5/local/prepare_cs_transcription.sh
+../../s5/local/prepare_cs_transcription.sh

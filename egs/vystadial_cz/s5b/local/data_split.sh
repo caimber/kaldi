@@ -1,1 +1,1 @@
-vystadial_cz/s5/local/data_split.sh
+../../s5/local/data_split.sh

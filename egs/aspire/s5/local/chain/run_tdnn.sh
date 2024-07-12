@@ -1,1 +1,1 @@
-aspire/s5/local/chain/tuning/run_tdnn_7b.sh
+tuning/run_tdnn_7b.sh

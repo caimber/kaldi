@@ -1,1 +1,1 @@
-tedlium/s5_r2/local/chain/tuning/run_tdnn_1g.sh
+tuning/run_tdnn_1g.sh

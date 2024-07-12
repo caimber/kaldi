@@ -1,1 +1,1 @@
-swbd/s5c/local/chain/tuning/run_blstm_6k.sh
+tuning/run_blstm_6k.sh

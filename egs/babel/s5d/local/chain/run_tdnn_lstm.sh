@@ -1,1 +1,1 @@
-babel/s5d/local/chain/tuning/run_tdnn_lstm.sh
+./tuning/run_tdnn_lstm.sh

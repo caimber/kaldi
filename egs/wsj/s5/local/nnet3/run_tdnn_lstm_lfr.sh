@@ -1,1 +1,1 @@
-wsj/s5/local/nnet3/tuning/run_tdnn_lstm_lfr_1a.sh
+tuning/run_tdnn_lstm_lfr_1a.sh

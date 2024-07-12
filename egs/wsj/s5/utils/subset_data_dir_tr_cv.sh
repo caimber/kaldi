@@ -1,1 +1,1 @@
-wsj/s5/utils/nnet/subset_data_tr_cv.sh
+nnet/subset_data_tr_cv.sh

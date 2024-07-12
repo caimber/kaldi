@@ -1,1 +1,1 @@
-vystadial_cz/s5/local/create_LMs.sh
+../../s5/local/create_LMs.sh

@@ -1,1 +1,1 @@
-hkust/s5/local/chain/tuning/run_tdnn_2a.sh
+tuning/run_tdnn_2a.sh

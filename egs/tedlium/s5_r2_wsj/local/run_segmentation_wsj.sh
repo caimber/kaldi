@@ -1,1 +1,1 @@
-tedlium/s5_r2_wsj/local/tuning/run_segmentation_wsj_e.sh
+tuning/run_segmentation_wsj_e.sh

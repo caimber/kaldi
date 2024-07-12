@@ -1,1 +1,1 @@
-wsj/s5/utils/perturb_data_dir_speed.sh
+../perturb_data_dir_speed.sh

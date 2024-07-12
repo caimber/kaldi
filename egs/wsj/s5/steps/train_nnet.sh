@@ -1,1 +1,1 @@
-wsj/s5/steps/nnet/train.sh
+nnet/train.sh

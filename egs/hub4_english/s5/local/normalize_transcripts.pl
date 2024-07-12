@@ -1,1 +1,1 @@
-hub4_english/s5/local/data_prep/normalize_bn96_transcripts.pl
+data_prep/normalize_bn96_transcripts.pl

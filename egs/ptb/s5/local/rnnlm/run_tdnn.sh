@@ -1,1 +1,1 @@
-ptb/s5/local/rnnlm/tuning/run_tdnn_a.sh
+tuning/run_tdnn_a.sh

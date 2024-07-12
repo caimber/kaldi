@@ -1,1 +1,1 @@
-babel/s5c/local/run_kws_stt_task.sh
+run_kws_stt_task.sh

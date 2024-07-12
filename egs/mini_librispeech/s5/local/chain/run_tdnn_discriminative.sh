@@ -1,1 +1,1 @@
-mini_librispeech/s5/local/chain/tuning/run_tdnn_1c_discriminative.sh
+tuning/run_tdnn_1c_discriminative.sh

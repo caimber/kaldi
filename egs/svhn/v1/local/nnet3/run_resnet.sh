@@ -1,1 +1,1 @@
-svhn/v1/local/nnet3/tuning/run_resnet_1d.sh
+tuning/run_resnet_1d.sh

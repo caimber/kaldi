@@ -1,1 +1,1 @@
-madcat_zh/v1/local/chain/tuning/run_cnn_chainali_1b.sh
+tuning/run_cnn_chainali_1b.sh

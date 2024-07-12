@@ -1,1 +1,1 @@
-ami/s5b/local/chain/tuning/run_tdnn_lstm_bs_1a.sh
+tuning/run_tdnn_lstm_bs_1a.sh

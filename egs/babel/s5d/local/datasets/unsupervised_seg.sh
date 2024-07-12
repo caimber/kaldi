@@ -1,1 +1,1 @@
-babel/s5d/local/datasets/supervised_seg.sh
+supervised_seg.sh

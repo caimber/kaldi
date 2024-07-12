@@ -1,1 +1,1 @@
-dihard_2018/v1/local/make_voxceleb2.pl
+../../v1/local/make_voxceleb2.pl

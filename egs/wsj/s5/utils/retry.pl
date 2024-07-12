@@ -1,1 +1,1 @@
-wsj/s5/utils/parallel/retry.pl
+parallel/retry.pl

@@ -1,1 +1,1 @@
-wsj/s5/utils/parallel/slurm.pl
+parallel/slurm.pl

@@ -1,1 +1,1 @@
-wsj/s5/local/flist2scp.pl
+../../../wsj/s5/local/flist2scp.pl

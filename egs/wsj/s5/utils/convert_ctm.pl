@@ -1,1 +1,1 @@
-wsj/s5/utils/ctm/convert_ctm.pl
+ctm/convert_ctm.pl

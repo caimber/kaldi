@@ -1,1 +1,1 @@
-madcat_ar/v1/local/chain/tuning/run_cnn_e2eali_1b.sh
+tuning/run_cnn_e2eali_1b.sh

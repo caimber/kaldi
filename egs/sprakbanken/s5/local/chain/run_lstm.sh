@@ -1,1 +1,1 @@
-sprakbanken/s5/local/chain/tuning/run_lstm_1e.sh
+tuning/run_lstm_1e.sh
