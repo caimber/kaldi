@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Installs beamformit from the location https://github.com/xanguera/BeamformIt
 

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 VER=1.10
 if [ ! -f liblbfgs-$VER.tar.gz ]; then
   wget https://github.com/downloads/chokkan/liblbfgs/liblbfgs-$VER.tar.gz

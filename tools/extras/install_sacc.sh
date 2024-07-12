@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Make sure we are in the tools/ directory.
 if [ `basename $PWD` == extras ]; then
