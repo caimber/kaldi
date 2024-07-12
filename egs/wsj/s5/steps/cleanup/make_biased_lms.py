@@ -36,7 +36,7 @@ args = parser.parse_args()
 
 
 try:
-    utterance_map_file = open(args.utterance_map, "w", encoding="utf-8")
+    utterance_map_file = open(args.utterance_map, "w")
 except:
     sys.exit("make_biased_lms.py: error opening {0} to write utterance map".format(
             args.utterance_map))

@@ -1,1 +1,1 @@
-tuning/run_lstm_1a.sh
+chime4/s5_1ch/local/rnnlm/tuning/run_lstm_1a.sh

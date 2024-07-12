@@ -1,1 +1,1 @@
-../prepare_lang.sh
+wsj/s5/utils/prepare_lang.sh

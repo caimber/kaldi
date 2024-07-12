@@ -1,1 +1,1 @@
-scoring/score_kaldi_compare.sh
+wsj/s5/steps/scoring/score_kaldi_compare.sh

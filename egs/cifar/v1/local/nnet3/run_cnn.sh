@@ -1,1 +1,1 @@
-tuning/run_cnn_aug_1d.sh
+cifar/v1/local/nnet3/tuning/run_cnn_aug_1d.sh

@@ -1,1 +1,1 @@
-../copy_data_dir.sh
+wsj/s5/utils/copy_data_dir.sh

@@ -33,8 +33,7 @@ set -o pipefail
 
 miniconda_dir=$HOME/miniconda3/
 if [ ! -d $miniconda_dir ]; then
-    echo "$miniconda_dir does not exist. Please run '$KALDI_ROOT/tools/extras/install_miniconda.sh'."
-    exit 1
+    echo "$miniconda_dir does not exist. Please run '../../../tools/extras/install_miniconda.sh' and '../../../tools/extras/install_wpe.sh';"
 fi
 
 # check if WPE is installed

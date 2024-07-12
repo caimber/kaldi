@@ -76,7 +76,6 @@ config_to_layer = {
         'fast-norm-opgru-layer' : xlayers.XconfigFastNormOpgruLayer,
         'tdnnf-layer': xlayers.XconfigTdnnfLayer,
         'prefinal-layer': xlayers.XconfigPrefinalLayer,
-        'spec-augment-layer': xlayers.XconfigSpecAugmentLayer,
         'renorm-component': xlayers.XconfigRenormComponent,
         'batchnorm-component': xlayers.XconfigBatchnormComponent,
         'no-op-component': xlayers.XconfigNoOpComponent,
@@ -85,8 +84,7 @@ config_to_layer = {
         'scale-component':  xlayers.XconfigPerElementScaleComponent,
         'dim-range-component': xlayers.XconfigDimRangeComponent,
         'offset-component':  xlayers.XconfigPerElementOffsetComponent,
-        'combine-feature-maps-layer': xlayers.XconfigCombineFeatureMapsLayer,
-        'delta-layer': xlayers.XconfigDeltaLayer
+        'combine-feature-maps-layer': xlayers.XconfigCombineFeatureMapsLayer
 }
 
 # Turn a config line and a list of previous layers into

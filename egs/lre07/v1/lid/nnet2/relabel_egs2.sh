@@ -1,1 +1,1 @@
-../../steps/nnet2/relabel_egs2.sh
+wsj/s5/steps/nnet2/relabel_egs2.sh

@@ -1,1 +1,1 @@
-tuning/run_lstm_tdnn_1b.sh
+wsj/s5/local/rnnlm/tuning/run_lstm_tdnn_1b.sh

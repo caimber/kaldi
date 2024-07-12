@@ -1,1 +1,1 @@
-../../v1/local/make_dihard_2018_dev.py
+dihard_2018/v1/local/make_dihard_2018_dev.py

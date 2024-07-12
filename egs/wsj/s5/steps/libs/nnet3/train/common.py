@@ -320,8 +320,7 @@ def halve_minibatch_size_str(minibatch_size_str):
 
 def copy_egs_properties_to_exp_dir(egs_dir, dir):
     try:
-        for file in ['cmvn_opts', 'splice_opts', 'info/final.ie.id', 'final.mat',
-                     'global_cmvn.stats', 'online_cmvn']:
+        for file in ['cmvn_opts', 'splice_opts', 'info/final.ie.id', 'final.mat']:
             file_name = '{dir}/{file}'.format(dir=egs_dir, file=file)
             if os.path.isfile(file_name):
                 shutil.copy(file_name, dir)

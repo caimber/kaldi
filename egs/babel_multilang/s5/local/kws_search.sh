@@ -1,1 +1,1 @@
-../../../babel/s5d/local/kws_search.sh
+babel/s5d/local/kws_search.sh

@@ -1,1 +1,1 @@
-tuning/run_cnn_aug_1b.sh
+svhn/v1/local/nnet3/tuning/run_cnn_aug_1b.sh

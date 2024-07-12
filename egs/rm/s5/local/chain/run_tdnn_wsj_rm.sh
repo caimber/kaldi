@@ -1,1 +1,1 @@
-tuning/run_tdnn_wsj_rm_1a.sh
+rm/s5/local/chain/tuning/run_tdnn_wsj_rm_1a.sh

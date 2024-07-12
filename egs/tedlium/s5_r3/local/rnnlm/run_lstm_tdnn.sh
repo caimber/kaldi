@@ -1,1 +1,1 @@
-tuning/run_lstm_tdnn_a.sh
+tedlium/s5_r3/local/rnnlm/tuning/run_lstm_tdnn_a.sh

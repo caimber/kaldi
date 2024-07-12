@@ -1,1 +1,1 @@
-score_sclite.sh
+tedlium/s5_r2_wsj/local/score_sclite.sh

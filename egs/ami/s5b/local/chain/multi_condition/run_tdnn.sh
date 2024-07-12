@@ -1,1 +1,1 @@
-tuning/run_tdnn_1a.sh
+ami/s5b/local/chain/multi_condition/tuning/run_tdnn_1a.sh

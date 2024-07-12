@@ -38,8 +38,7 @@ logger.addHandler(handler)
 def get_args():
     """gets command line arguments"""
 
-    usage = """ Python script to resolve overlaps in ctms.  May be used with
-                utils/data/subsegment_data_dir.sh. """
+    usage = """ Python script to resolve overlaps in ctms """
     parser = argparse.ArgumentParser(usage)
     parser.add_argument('segments', type=argparse.FileType('r'),
                         help='use segments to resolve overlaps')

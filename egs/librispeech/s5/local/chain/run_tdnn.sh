@@ -1,1 +1,1 @@
-tuning/run_tdnn_1d.sh
+librispeech/s5/local/chain/tuning/run_tdnn_1d.sh

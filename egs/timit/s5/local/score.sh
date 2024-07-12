@@ -1,1 +1,1 @@
-score_sclite.sh
+timit/s5/local/score_sclite.sh

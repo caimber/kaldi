@@ -1,1 +1,1 @@
-tuning/run_xvector_1a.sh
+dihard_2018/v2/local/nnet3/xvector/tuning/run_xvector_1a.sh

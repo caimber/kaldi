@@ -1,1 +1,1 @@
-tuning/run_tdnn_1a.sh
+fisher_english/s5/local/semisup/chain/tuning/run_tdnn_1a.sh

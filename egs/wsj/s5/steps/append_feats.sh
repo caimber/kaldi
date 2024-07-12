@@ -1,1 +1,1 @@
-paste_feats.sh
+wsj/s5/steps/paste_feats.sh

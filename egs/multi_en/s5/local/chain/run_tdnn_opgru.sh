@@ -1,1 +1,1 @@
-tuning/run_tdnn_opgru_1b.sh
+multi_en/s5/local/chain/tuning/run_tdnn_opgru_1b.sh

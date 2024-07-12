@@ -1,1 +1,1 @@
-tuning/run_blstm_7b.sh
+aspire/s5/local/chain/tuning/run_blstm_7b.sh

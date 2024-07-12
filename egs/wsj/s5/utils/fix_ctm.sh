@@ -1,1 +1,1 @@
-ctm/fix_ctm.sh
+wsj/s5/utils/ctm/fix_ctm.sh

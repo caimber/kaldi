@@ -1,1 +1,1 @@
-../../s5_r2/local/download_data.sh
+tedlium/s5_r2/local/download_data.sh

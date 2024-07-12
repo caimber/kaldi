@@ -1,1 +1,1 @@
-tuning/run_cnn_e2eali_1b.sh
+yomdle_tamil/v1/local/chain/tuning/run_cnn_e2eali_1b.sh

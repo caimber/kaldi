@@ -1,1 +1,1 @@
-tuning/run_tdnn_lstm_lfr_1a.sh
+tedlium/s5_r2/local/nnet3/tuning/run_tdnn_lstm_lfr_1a.sh

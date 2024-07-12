@@ -1,1 +1,1 @@
-../nnet2/remove_egs.sh
+wsj/s5/steps/nnet2/remove_egs.sh

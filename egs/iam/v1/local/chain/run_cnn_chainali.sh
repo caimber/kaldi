@@ -1,1 +1,1 @@
-tuning/run_cnn_chainali_1d.sh
+iam/v1/local/chain/tuning/run_cnn_chainali_1d.sh

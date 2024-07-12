@@ -34,7 +34,9 @@ where:
 
 import argparse
 import sys
-import codecs
+
+sys.path.append('steps/libs')
+import common as common_lib
 
 
 def get_args():
@@ -61,14 +63,14 @@ def main():
 
   # File containing speaker labels per segment
   seg2label = {}
-  with codecs.open(args.labels, 'r', 'utf-8') as labels_file:
+  with common_lib.smart_open(args.labels) as labels_file:
     for line in labels_file:
       seg, label = line.strip().split()
       seg2label[seg] = label
 
   # Segments file
   reco2segs = {}
-  with codecs.open(args.segments, 'r', 'utf-8') as segments_file:
+  with common_lib.smart_open(args.segments) as segments_file:
     for line in segments_file:
       seg, reco, start, end = line.strip().split()
       try:
@@ -115,7 +117,7 @@ def main():
     new_segs += " " + start + "," + end + "," + label
     merged_segs.append(reco + new_segs)
 
-  with codecs.open(args.rttm_file, 'w', 'utf-8') as rttm_writer:
+  with common_lib.smart_open(args.rttm_file, 'w') as rttm_writer:
     for reco_line in merged_segs:
       segs = reco_line.strip().split()
       reco = segs[0]

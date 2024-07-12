@@ -1,1 +1,1 @@
-tuning/run_tdnn_1b.sh
+hub4_spanish/s5/local/chain/tuning/run_tdnn_1b.sh

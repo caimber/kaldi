@@ -1,1 +1,1 @@
-tuning/run_tdnn_1a.sh
+csj/s5/local/chain/tuning/run_tdnn_1a.sh

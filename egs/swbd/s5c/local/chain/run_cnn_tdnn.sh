@@ -1,1 +1,1 @@
-tuning/run_cnn_tdnn_1a.sh
+swbd/s5c/local/chain/tuning/run_cnn_tdnn_1a.sh

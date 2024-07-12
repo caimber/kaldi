@@ -1,1 +1,1 @@
-tuning/run_tdnn_lfr1c_disc.sh
+swbd/s5c/local/nnet3/tuning/run_tdnn_lfr1c_disc.sh

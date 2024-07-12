@@ -1,1 +1,1 @@
-../split_data.sh
+wsj/s5/utils/split_data.sh

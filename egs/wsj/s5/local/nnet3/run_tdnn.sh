@@ -1,1 +1,1 @@
-tuning/run_tdnn_1a.sh
+wsj/s5/local/nnet3/tuning/run_tdnn_1a.sh

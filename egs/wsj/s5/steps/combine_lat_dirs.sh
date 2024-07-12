@@ -1,1 +1,1 @@
-combine_ali_dirs.sh
+wsj/s5/steps/combine_ali_dirs.sh

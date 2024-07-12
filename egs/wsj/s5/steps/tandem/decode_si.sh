@@ -1,1 +1,1 @@
-decode.sh
+wsj/s5/steps/tandem/decode.sh

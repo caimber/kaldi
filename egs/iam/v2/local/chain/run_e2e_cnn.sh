@@ -1,1 +1,1 @@
-tuning/run_e2e_cnn_1b.sh
+iam/v2/local/chain/tuning/run_e2e_cnn_1b.sh

@@ -1,1 +1,1 @@
-tuning/run_tdnn_attention_1a.sh
+swbd/s5c/local/chain/tuning/run_tdnn_attention_1a.sh

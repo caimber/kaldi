@@ -1,1 +1,1 @@
-score_sclite.sh
+hub4_english/s5/local/score_sclite.sh

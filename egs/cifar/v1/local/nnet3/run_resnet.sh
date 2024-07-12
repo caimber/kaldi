@@ -1,1 +1,1 @@
-tuning/run_resnet_1e.sh
+cifar/v1/local/nnet3/tuning/run_resnet_1e.sh

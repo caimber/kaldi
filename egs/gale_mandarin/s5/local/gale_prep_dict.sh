@@ -41,7 +41,7 @@ cat $dict_dir/vocab-full.txt | grep -v '[a-zA-Z]' | \
 if [ ! -f $dict_dir/cmudict/cmudict.0.7a ]; then
   echo "--- Downloading CMU dictionary ..."
   svn co http://svn.code.sf.net/p/cmusphinx/code/trunk/cmudict/  $dict_dir/cmudict || \
-  wget -c -e robots=off  -r -np -nH --cut-dirs=4 -R index.html http://svn.code.sf.net/p/cmusphinx/code/trunk/cmudict/ -P $dict_dir  || exit 1
+  wget -e robots=off  -r -np -nH --cut-dirs=4 -R index.html http://svn.code.sf.net/p/cmusphinx/code/trunk/cmudict/ -P $dict_dir  || exit 1
 fi
 
 if [ ! -f $dict_dir/cmudict/scripts/make_baseform.pl ] ; then
@@ -130,9 +130,7 @@ unset LC_ALL
 # are equal
 cat $dict_dir/ch-dict.txt |\
   perl -e '
-  use utf8;
-  binmode(STDIN,":encoding(utf8)");
-  binmode(STDOUT,":encoding(utf8)");
+  use encoding utf8;
   while (<STDIN>) {
     @A = split(" ", $_);
     $word_len = length($A[0]);
@@ -301,3 +299,4 @@ cat $dict_dir/nonsilence_phones.txt | perl -e 'while(<>){ foreach $p (split(" ",
 
 export LC_ALL=C
 echo "$0: Done"
+

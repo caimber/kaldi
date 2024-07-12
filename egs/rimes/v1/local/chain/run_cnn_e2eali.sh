@@ -1,1 +1,1 @@
-tuning/run_cnn_e2eali_1a.sh
+rimes/v1/local/chain/tuning/run_cnn_e2eali_1a.sh

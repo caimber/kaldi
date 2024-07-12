@@ -1,1 +1,1 @@
-tuning/run_cnn_e2eali_1c.sh
+iam/v1/local/chain/tuning/run_cnn_e2eali_1c.sh

@@ -1,1 +1,1 @@
-../chain/run_ivector_common.sh
+babel/s5d/local/chain/run_ivector_common.sh

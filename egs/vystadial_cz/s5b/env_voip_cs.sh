@@ -1,1 +1,1 @@
-../s5/env_voip_cs.sh
+vystadial_cz/s5/env_voip_cs.sh

@@ -1,1 +1,1 @@
-../validate_lang.pl
+wsj/s5/utils/validate_lang.pl

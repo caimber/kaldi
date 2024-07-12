@@ -1,1 +1,1 @@
-tuning/run_tdnn_1a.sh
+chime4/s5_1ch/local/chain/tuning/run_tdnn_1a.sh

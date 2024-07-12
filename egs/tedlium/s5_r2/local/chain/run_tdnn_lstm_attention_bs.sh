@@ -1,1 +1,1 @@
-tuning/run_tdnn_lstm_attention_bs_1b.sh
+tedlium/s5_r2/local/chain/tuning/run_tdnn_lstm_attention_bs_1b.sh

@@ -1,1 +1,1 @@
-decode.sh
+wsj/s5/steps/decode.sh

@@ -1,1 +1,1 @@
-../../../../babel/s5d/local/search/search.sh
+babel/s5d/local/search/search.sh

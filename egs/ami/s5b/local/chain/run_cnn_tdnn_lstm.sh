@@ -1,1 +1,1 @@
-tuning/run_cnn_tdnn_lstm_1c.sh
+ami/s5b/local/chain/tuning/run_cnn_tdnn_lstm_1c.sh
