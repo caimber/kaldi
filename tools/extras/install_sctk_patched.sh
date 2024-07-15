@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # A patch for sctk-2.4.0 smooth installation under Cygwin
 

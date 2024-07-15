@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Installs nara-wpe with dependencies
 # miniconda should be installed in $HOME/miniconda3/ 

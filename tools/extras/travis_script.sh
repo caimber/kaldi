@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # We take into account dependency pointers optionally set in the environment.
 # Typical usage shown below; any one can be safely left unset.

@@ -56,7 +56,7 @@ distclean:
 	rm -f cub
 
 
-.PHONY:   # so target will be made even though "openfst" exists.
+.PHONY: openfst # so target will be made even though "openfst" exists.
 openfst: openfst_compiled openfst-$(OPENFST_VERSION)/lib
 	-rm -f openfst
 	-ln -s openfst-$(OPENFST_VERSION) openfst
@@ -95,21 +95,21 @@ openfst-$(OPENFST_VERSION).tar.gz:
 sclite: sclite_compiled
 
 .PHONY: sclite_compiled
-sclite_compiled: sctk sctk_configured 
+sclite_compiled: sctk sctk_configured
 	cd sctk; \
 	$(MAKE) CC="$(CC)" CXX="$(CXX)" all && $(MAKE) install && $(MAKE) doc
 
-sctk_configured: sctk sctk/.configured 
+sctk_configured: sctk sctk/.configured
 
 sctk/.configured: sctk
 	cd sctk; $(MAKE) config
 	touch sctk/.configured
 
 .PHONY: sctk
-# sctk: sctk-2.4.10-20151007-1312Z.tar.bz2
-# 	tar xojf sctk-2.4.10-20151007-1312Z.tar.bz2 || \
-#       tar --exclude '*NONE*html' -xvojf sctk-2.4.10-20151007-1312Z.tar.bz2
-# 	rm -rf sctk && ln -s sctk-2.4.10 sctk
+sctk: sctk-2.4.10-20151007-1312Z.tar.bz2
+	tar xojf sctk-2.4.10-20151007-1312Z.tar.bz2 || \
+      tar --exclude '*NONE*html' -xvojf sctk-2.4.10-20151007-1312Z.tar.bz2
+	rm -rf sctk && ln -s sctk-2.4.10 sctk
 
 sctk-2.4.10-20151007-1312Z.tar.bz2:
 	wget -T 10 -t 3 ftp://jaguar.ncsl.nist.gov/pub/sctk-2.4.10-20151007-1312Z.tar.bz2|| \
@@ -141,10 +141,10 @@ cub:
 # OpenBLAS is not compiled by default. Run 'make -j openblas' in this directory to build.
 .PHONY: openblas
 openblas:
-	@-rm -rf OpenBLAS OpenMathLib-OpenBLAS-eebc189*
+	@-rm -rf OpenBLAS xianyi-OpenBLAS-*
 	wget -t3 -nv -O- $$( \
             wget -qO- 'https://api.github.com/repos/xianyi/OpenBLAS/releases/tags/v$(OPENBLAS_VERSION)' | \
             python -c 'import sys,json;print(json.load(sys.stdin)["tarball_url"])') | \
 	  tar xzf -
-	mv OpenMathLib-OpenBLAS-eebc189* OpenBLAS
-	$(MAKE) PREFIX=$$(pwd)/OpenBLAS/install USE_THREAD=0 TARGET=ARMV8 -C OpenBLAS all install
+	mv xianyi-OpenBLAS-* OpenBLAS
+	$(MAKE) PREFIX=$$(pwd)/OpenBLAS/install USE_THREAD=0 -C OpenBLAS all install

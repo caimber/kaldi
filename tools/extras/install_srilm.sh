@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 current_path=`pwd`
 current_dir=`basename "$current_path"`
