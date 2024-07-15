@@ -48,8 +48,11 @@ KALDI_SONAME ?= libkaldi.so
 # Reset the default goal, so that the all target will become default
 .DEFAULT_GOAL :=
 .PHONY: all mklibdir rmlibdir checkversion
-all: $(SUBDIRS) matrix/test
+all: $(SUBDIRS) kaldilib
 	@echo Done
+
+kaldilib:
+	-gcc -shared -o libkaldi.so -Wl,--whole-archive ./online2/kaldi-online2.a ./ivector/kaldi-ivector.a ./nnet3/kaldi-nnet3.a ./chain/kaldi-chain.a ./nnet2/kaldi-nnet2.a ./lat/kaldi-lat.a ./decoder/kaldi-decoder.a ./cudamatrix/kaldi-cudamatrix.a ./feat/kaldi-feat.a ./transform/kaldi-transform.a ./gmm/kaldi-gmm.a ./hmm/kaldi-hmm.a ./tree/kaldi-tree.a ./matrix/kaldi-matrix.a ./fstext/kaldi-fstext.a ./util/kaldi-util.a ./base/kaldi-base.a -Wl,--no-whole-archive
 
 ifneq ($(KALDILIBDIR), )
 mklibdir: | $(KALDILIBDIR)/

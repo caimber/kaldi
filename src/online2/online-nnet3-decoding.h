@@ -97,6 +97,7 @@ class SingleUtteranceNnet3DecoderTpl {
   bool EndpointDetected(const OnlineEndpointConfig &config);
 
   const LatticeFasterOnlineDecoderTpl<FST> &Decoder() const { return decoder_; }
+  nnet3::DecodableAmNnetLoopedOnline &Decodable() { return decodable_; }
 
   ~SingleUtteranceNnet3DecoderTpl() { }
  private:

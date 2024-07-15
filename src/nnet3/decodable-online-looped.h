@@ -55,6 +55,7 @@ namespace nnet3 {
 // DecodableInterface.
 class DecodableNnetLoopedOnlineBase: public DecodableInterface {
  public:
+  bool use_cached_log_post;
   // Constructor.  'input_feature' is for the feature that will be given
   // as 'input' to the neural network; 'ivector_feature' is for the iVector
   // feature, or NULL if iVectors are not being used.
@@ -111,6 +112,7 @@ class DecodableNnetLoopedOnlineBase: public DecodableInterface {
   // The current log-posteriors that we got from the last time we
   // ran the computation.
   Matrix<BaseFloat> current_log_post_;
+  Matrix<BaseFloat> cached_log_post_;
 
   // The number of chunks we have computed so far.
   int32 num_chunks_computed_;
@@ -188,7 +190,7 @@ class DecodableAmNnetLoopedOnline: public DecodableNnetLoopedOnlineBase {
       OnlineFeatureInterface *input_features,
       OnlineFeatureInterface *ivector_features):
       DecodableNnetLoopedOnlineBase(info, input_features, ivector_features),
-      trans_model_(trans_model) { }
+      trans_model_(trans_model) { use_cached_log_post = false; }
 
 
   // returns the output-dim of the neural net.

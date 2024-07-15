@@ -105,6 +105,7 @@ class SingleUtteranceNnet2Decoder {
   bool EndpointDetected(const OnlineEndpointConfig &config);
 
   const LatticeFasterOnlineDecoder &Decoder() const { return decoder_; }
+  nnet2::DecodableNnet2Online &Decodable() { return decodable_; }
   
   ~SingleUtteranceNnet2Decoder() { }
  private:
